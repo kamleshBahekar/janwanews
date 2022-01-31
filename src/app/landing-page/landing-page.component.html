@@ -1,0 +1,22 @@
+
+<div class="row mt-2">
+    <div class="col-md-12 col-lg-12 col-sm-12 d-flex justify-content-center">
+       <h3 class="profile-name">Welcome To Janwa News </h3>
+    </div>
+</div>
+<div class="row mx-2">
+<div class="col-md-6 col-lg-4 col-sm-12 my-2" *ngFor="let item of newsData">
+    <div class="card">
+        <img class="card-img-top" src="{{item.urlToImage}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><strong>{{item?.title}}</strong></h5>
+          <i>{{item.author}}</i>
+          <p class="card-text">{{item.content}}</p>
+        </div>
+        <div class="card-body">
+        <p>{{item.description}}</p>
+        <a href="{{item.url}}" class="card-link">{{item.url}}</a>
+        </div>
+      </div>
+</div>
+</div>
